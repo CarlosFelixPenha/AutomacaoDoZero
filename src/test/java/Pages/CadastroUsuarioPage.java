@@ -13,60 +13,60 @@ public class CadastroUsuarioPage {
 		
 	}
 	
-public void CadastroUsuario () throws InterruptedException {
+public void clicarLinkCriarUsuarios () throws InterruptedException {
 	
 	
-	WebElement Formulario = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[1]/a"));
-	Formulario.click();
-	Thread.sleep(1000);
-	
-	WebElement CriarUsuario = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[1]/div/ul/li[1]/a"));
-	CriarUsuario.click();
+	WebElement FormularioCriarUsuario = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[1]/a"));
+	FormularioCriarUsuario.click();
 	Thread.sleep(500);
 	
-	WebElement Nome = driver.findElement(By.name("user[name]"));
-	Nome.sendKeys("Carlos");
+	WebElement LinkCriarUsuario = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[1]/div/ul/li[1]/a"));
+	LinkCriarUsuario.click();
+	Thread.sleep(500);
+	
+	WebElement CampoNome = driver.findElement(By.name("user[name]"));
+	CampoNome.sendKeys("Carlos");
 	Thread.sleep(300);
 	
-	WebElement SobreNome = driver.findElement(By.id("user_lastname"));
-	SobreNome.sendKeys("Guillen");
+	WebElement CampoSobreNome = driver.findElement(By.id("user_lastname"));
+	CampoSobreNome.sendKeys("Guillen");
 	Thread.sleep(300);
 	
-	WebElement Email = driver.findElement(By.id("user_email"));
-	Email.sendKeys("carlosguillen@teste.com.br");
+	WebElement CampoEmail = driver.findElement(By.id("user_email"));
+	CampoEmail.sendKeys("carlosguillen@teste.com.br");
 	Thread.sleep(300);
 	
-	WebElement Endereco = driver.findElement(By.id("user_address"));
-	Endereco.sendKeys("Rua dos ladrilhos 109");
+	WebElement CampoEndereco = driver.findElement(By.id("user_address"));
+	CampoEndereco.sendKeys("Rua dos ladrilhos 109");
 	Thread.sleep(300);
 	
-	WebElement Universidade = driver.findElement(By.name("user[university]"));
-	Universidade.sendKeys("Universidade do Mato Grosso do Sul");
+	WebElement CampoUniversidade = driver.findElement(By.name("user[university]"));
+	CampoUniversidade.sendKeys("Universidade do Mato Grosso do Sul");
 	Thread.sleep(300);
 	
-	WebElement Profissao = driver.findElement(By.id("user_profile"));
-	Profissao.sendKeys("QA - Quality Assurance");
+	WebElement CampoProfissao = driver.findElement(By.id("user_profile"));
+	CampoProfissao.sendKeys("QA - Quality Assurance");
 	Thread.sleep(300);
 	
-	WebElement Genero = driver.findElement(By.id("user_gender"));
-	Genero.sendKeys("Masculino");
+	WebElement CampoGenero = driver.findElement(By.id("user_gender"));
+	CampoGenero.sendKeys("Masculino");
 	Thread.sleep(300);
 	
-	WebElement Idade = driver.findElement(By.name("user[age]"));
-	Idade.sendKeys("49");
+	WebElement CampoIdade = driver.findElement(By.name("user[age]"));
+	CampoIdade.sendKeys("49");
 	Thread.sleep(300);
 	
 	WebElement BotaoCriar = driver.findElement (By.name("commit"));
 	BotaoCriar.click();
-	Thread.sleep(1000);
+	Thread.sleep(500);
 	
-	WebElement BotaoVoltar1 = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[3]/div/a[2]"));
-	BotaoVoltar1.click();
-	Thread.sleep(1000);
+	WebElement BotaoVoltarCriarUsuario = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[3]/div/a[2]"));
+	BotaoVoltarCriarUsuario.click();
+	Thread.sleep(2000);
 	
-	WebElement BotaoVoltar3 = driver.findElement (By.xpath("/html/body/div[2]/div[3]/div/a[2]"));
-	BotaoVoltar3.click();
-	Thread.sleep(1000);
+	WebElement BotaoVoltarUsuario = driver.findElement (By.xpath("/html/body/div[2]/div[3]/div/a[2]"));
+	BotaoVoltarUsuario.click();
+	Thread.sleep(2000);
 
 }
 }

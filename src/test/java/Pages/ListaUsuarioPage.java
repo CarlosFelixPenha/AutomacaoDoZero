@@ -13,18 +13,18 @@ public class ListaUsuarioPage {
 		
 	}
 	
-	public void ListaUsuario () throws InterruptedException {
+	public void clicarLinkListaUsuarios () throws InterruptedException {
 		
-		WebElement Formulario1 = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[1]/a"));
-		Formulario1.click();
-		Thread.sleep(1000);
+		WebElement FormularioListaUsuario = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[1]/a"));
+		FormularioListaUsuario.click();
+		Thread.sleep(500);
 		
-		WebElement Lista = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[1]/div/ul/li[2]/a"));
-		Lista.click();
-		Thread.sleep(1000);
+		WebElement LinkListaUsuario = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[1]/div/ul/li[2]/a"));
+		LinkListaUsuario.click();
+		Thread.sleep(500);
 		
-		WebElement BotaoVoltar2 = driver.findElement (By.xpath("/html/body/div[2]/div[3]/div/a[2]"));
-		BotaoVoltar2.click();
+		WebElement BotaoVoltarListaUsuario = driver.findElement (By.xpath("/html/body/div[2]/div[3]/div/a[2]"));
+		BotaoVoltarListaUsuario.click();
 		Thread.sleep(2000);
 
 }

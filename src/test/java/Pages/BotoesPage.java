@@ -14,27 +14,27 @@ public class BotoesPage {
 		
 	}
 	
-	public void Botoes () throws InterruptedException {
+	public void clicarLinkBotoes () throws InterruptedException {
 		
-		WebElement Elementos2 = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[2]/a"));
-		Elementos2.click();
+		WebElement BuscaElementosBotoes = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[2]/a"));
+		BuscaElementosBotoes.click();
 		Thread.sleep(500);
 		
-		WebElement Botao = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[2]/div/ul/li[3]/a"));
-		Botao.click();
+		WebElement LinkBotoes = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[2]/div/ul/li[3]/a"));
+		LinkBotoes.click();
 		Thread.sleep(500);
 		
-		WebElement Raised = driver.findElement (By.id("teste"));
-		Raised.click();
+		WebElement BotaoRaised = driver.findElement (By.id("teste"));
+		BotaoRaised.click();
 		Thread.sleep(500);
 		
-		WebElement Flat = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[5]/div[1]/div/a"));
-		Flat.click();
+		WebElement BotaoFlat = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[5]/div[1]/div/a"));
+		BotaoFlat.click();
 		Thread.sleep(500);
 		
-		WebElement BotaoVoltar7 = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[8]/div/a"));
-		BotaoVoltar7.click();
-		Thread.sleep(1000);
+		WebElement BotaoVoltarBotoes = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[8]/div/a"));
+		BotaoVoltarBotoes.click();
+		Thread.sleep(2000);
 		
 }
 }

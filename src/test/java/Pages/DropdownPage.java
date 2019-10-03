@@ -13,43 +13,51 @@ public class DropdownPage {
 		
 	}
 	
-	public void Dropdown () throws InterruptedException {
+	public void clicarLinkDropdownSelect () throws InterruptedException {
 		
-		WebElement Elementos4 = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[2]/a"));
-		Elementos4.click();
+		WebElement BuscaElementosDropdownSelect = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[2]/a"));
+		BuscaElementosDropdownSelect.click();
 		Thread.sleep(500);
 		
-		WebElement Select = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[2]/div/ul/li[5]/a"));
-		Select.click();
+		WebElement LinkDropdownSelect = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[2]/div/ul/li[5]/a"));
+		LinkDropdownSelect.click();
 		Thread.sleep(500);
 		
-		WebElement MailBox = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div/div[3]/div[1]/div/a"));
-		MailBox.click();
+		WebElement BotaoMailBoxUnread = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div/div[3]/div[1]/div/a"));
+		BotaoMailBoxUnread.click();
 		Thread.sleep(500);
 
-		WebElement Unread = driver.findElement (By.id("dropdown1"));
-		Unread.click();
-		Thread.sleep(300);
-		
-		WebElement MailBox1 = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div/div[3]/div[1]/div/a"));
-		MailBox1.click();
+		WebElement OpcaoUnread = driver.findElement (By.id("dropdown1"));
+		OpcaoUnread.click();
 		Thread.sleep(500);
 		
-		WebElement OutBox = driver.findElement (By.id("dropdown4"));
-		OutBox.click();
+		WebElement BotaoMailBoxOutbox = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div/div[3]/div[1]/div/a"));
+		BotaoMailBoxOutbox.click();
 		Thread.sleep(500);
 		
-//		WebElement Pais = driver.findElement (By.xpath("//*[@id=\"select-options-c2bc24ca-e117-c865-c1d3-57cbaf719325\"]/li[1]/span"));
-//		Pais.click();
-//		Thread.sleep(500);
-//		
-//		WebElement Inglaterra = driver.findElement (By.xpath("//*[@id=\"select-options-3754f0c7-454d-ee82-c8d7-5316b5780904\"]/li[5]/span"));
-//		Inglaterra.click();
-//		Thread.sleep(500);
+		WebElement OpcaoOutBox = driver.findElement (By.id("dropdown4"));
+		OpcaoOutBox.click();
+		Thread.sleep(500);
 		
-		WebElement BotaoVoltar9 = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div/div[7]/div/a"));
-		BotaoVoltar9.click();
-		Thread.sleep(1000);
+		WebElement SelectPais = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div/div[5]/div[1]/div/input"));
+		SelectPais.click();
+		Thread.sleep(500);
+		
+//		WebElement CZodiaco = driver.findElement (By.xpath("//*[@id=\"select-options-970cf911-794b-1151-f0ca-6e60044fe979\"]/li[4]"));
+//		CZodiaco.click();
+//		Thread.sleep(1000);
+		
+//		WebElement Browser = driver.findElement (By.xpath("//*[@id=\"dropdown\"]/option[1]"));
+//		Browser.click();
+//		Thread.sleep(1000);
+		
+		WebElement OpcaoInternetExplorer = driver.findElement (By.xpath("//*[@id=\"dropdown\"]/option[5]"));
+		OpcaoInternetExplorer.click();
+		Thread.sleep(500);
+		
+		WebElement BotaoVoltarDropdownSelect = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div/div[7]/div/a"));
+		BotaoVoltarDropdownSelect.click();
+		Thread.sleep(2000);
 		
 }
 }

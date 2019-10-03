@@ -13,12 +13,12 @@ public class HomePage {
 		
 	}
 
-	public void Home () throws InterruptedException {
+	public void clicarBotaoComecarAutomacaoWeb () throws InterruptedException {
 		
 				
-		WebElement Home = driver.findElement (By.xpath("//*[@id=\"index-banner\"]/div/div[3]/a"));
-		Home.click();
-		Thread.sleep(500);
+		WebElement BotaoComecarAutomacaoWeb = driver.findElement (By.xpath("//*[@id=\"index-banner\"]/div/div[3]/a"));
+		BotaoComecarAutomacaoWeb.click();
+		Thread.sleep(2000);
 	
 }
 }

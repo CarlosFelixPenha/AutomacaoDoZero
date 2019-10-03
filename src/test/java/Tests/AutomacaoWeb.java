@@ -6,16 +6,18 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import Pages.HomePage;
-import Pages.CadastroUsuarioPage;
-import Pages.ListaUsuarioPage;
-import Pages.LinksPage;
-import Pages.ImputsPage;
+import Pages.AccordionPage;
+import Pages.AlertPage;
 import Pages.BotoesPage;
+import Pages.CadastroUsuarioPage;
 import Pages.CheckBoxPage;
 import Pages.DropdownPage;
-
-//import Pages.AccordionPage;
+import Pages.HomePage;
+import Pages.IframePage;
+import Pages.ImputsPage;
+import Pages.LinksPage;
+import Pages.ListaUsuarioPage;
+import Pages.ModalPage;
 //import Pages.AutoCompletePage;
 //import Pages.BotoesPage;
 //import Pages.CadastroUsuarioPage;
@@ -27,7 +29,7 @@ import Pages.DropdownPage;
 //import Pages.MousehoverPage;
 //import Pages.MudarFocoPage;
 //import Pages.ScrollPage;
-//import Pages.TextosPage;
+import Pages.TextosPage;
 //import Pages.UploadArquivoPage;
 
 // Instanciando as classes (WebDriver, Home, Cadastro, Lista, Links, etc...)
@@ -42,9 +44,12 @@ public class AutomacaoWeb {
 	static BotoesPage botoesPage;
 	static CheckBoxPage checkBoxPage;
 	static DropdownPage dropdownPage;
-//	static TextosPage textosPage;
+	static TextosPage textosPage;
+	static AccordionPage accordionPage;
+	static AlertPage alertPage;
+	static IframePage iframePage;
+	static ModalPage modalPage;
 //	static MudarFocoPage mudarFocoPage;
-//	static AccordionPage accordionPage;
 //	static AutoCompletePage autoCompletePage;
 //	static DatapickerPage datapickerPage;
 //	static DragAndDropPage dragAndDropPage;
@@ -69,6 +74,11 @@ public class AutomacaoWeb {
 			botoesPage = new BotoesPage (driver);
 			checkBoxPage = new CheckBoxPage (driver);
 			dropdownPage = new DropdownPage (driver);
+			textosPage = new TextosPage (driver);
+			accordionPage = new AccordionPage (driver);
+			alertPage = new AlertPage (driver);
+			iframePage = new IframePage (driver);
+			modalPage = new ModalPage (driver);
 			//Sleep sleep = new Sleep (driver);
 		
 	}
@@ -76,14 +86,19 @@ public class AutomacaoWeb {
 		
 	@Test
 	public void test() throws InterruptedException {
-			homePage.Home();
-			cadastroUsuarioPage.CadastroUsuario();
-			listaUsuarioPage.ListaUsuario();
-			linksPage.Links();
-			imputsPage.Imputs();
-			botoesPage.Botoes();
-			checkBoxPage.CheckBox();
-			dropdownPage.Dropdown();
+			homePage.clicarBotaoComecarAutomacaoWeb();
+			cadastroUsuarioPage.clicarLinkCriarUsuarios();
+			listaUsuarioPage.clicarLinkListaUsuarios();
+			linksPage.clicarLinkLinks();
+			imputsPage.clicarLinkImputsTextField();
+			botoesPage.clicarLinkBotoes();
+			checkBoxPage.clicarLinkRadioCheckbox();
+			dropdownPage.clicarLinkDropdownSelect();
+			textosPage.clicarLinkTextos();
+			accordionPage.clicarLinkAccordion();
+			alertPage.clicarLinkAlert();
+			iframePage.clicarLinkIframe();
+			modalPage.clicarLinkModal();
 		}
 		
 	@AfterClass

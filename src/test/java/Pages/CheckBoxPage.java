@@ -14,31 +14,31 @@ public class CheckBoxPage {
 		
 	}
 	
-	public void CheckBox () throws InterruptedException {
+	public void clicarLinkRadioCheckbox () throws InterruptedException {
 		
-		WebElement Elementos3 = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[2]/a"));
-		Elementos3.click();
+		WebElement BuscaElementosRadioCheckbox = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[2]/a"));
+		BuscaElementosRadioCheckbox.click();
 		Thread.sleep(500);
 		
-		WebElement Radio = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[2]/div/ul/li[4]/a"));
-		Radio.click();
+		WebElement LinkRadioCheckbox = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[2]/div/ul/li[4]/a"));
+		LinkRadioCheckbox.click();
 		Thread.sleep(300);
 		
-		WebElement Blue = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[3]/div[1]/form/p[2]/label"));
-		Blue.click();
+		WebElement RadioboxBlue = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[3]/div[1]/form/p[2]/label"));
+		RadioboxBlue.click();
 		Thread.sleep(300);
 
-		WebElement Yellow = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[3]/div[1]/form/p[3]/label"));
-		Yellow.click();
+		WebElement RadioboxYellow = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[3]/div[1]/form/p[3]/label"));
+		RadioboxYellow.click();
 		Thread.sleep(300);
 		
-		WebElement White = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[3]/div[2]/p[4]/label"));
-		White.click();
+		WebElement CheckboxWhite = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[3]/div[2]/p[4]/label"));
+		CheckboxWhite.click();
 		Thread.sleep(300);
 		
-		WebElement BotaoVoltar8 = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[4]/div/a"));
-		BotaoVoltar8.click();
-		Thread.sleep(1000);
+		WebElement BotaoVoltarRadioCheckbox = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[4]/div/a"));
+		BotaoVoltarRadioCheckbox.click();
+		Thread.sleep(2000);
 		
 }
 }
