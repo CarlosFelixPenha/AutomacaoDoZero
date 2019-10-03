@@ -32,8 +32,8 @@ public class BotoesPage {
 		Flat.click();
 		Thread.sleep(500);
 		
-		WebElement BotaoVoltar8 = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[8]/div/a"));
-		BotaoVoltar8.click();
+		WebElement BotaoVoltar7 = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[8]/div/a"));
+		BotaoVoltar7.click();
 		Thread.sleep(1000);
 		
 }

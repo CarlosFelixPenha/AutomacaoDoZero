@@ -6,8 +6,15 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import Pages.BotoesPage;
+import Pages.HomePage;
 import Pages.CadastroUsuarioPage;
+import Pages.ListaUsuarioPage;
+import Pages.LinksPage;
+import Pages.ImputsPage;
+import Pages.BotoesPage;
+import Pages.CheckBoxPage;
+import Pages.DropdownPage;
+
 //import Pages.AccordionPage;
 //import Pages.AutoCompletePage;
 //import Pages.BotoesPage;
@@ -15,10 +22,6 @@ import Pages.CadastroUsuarioPage;
 //import Pages.CheckBoxPage;
 //import Pages.DatapickerPage;
 //import Pages.DragAndDropPage;
-//import Pages.DropdownPage;
-import Pages.HomePage;
-import Pages.LinksPage;
-import Pages.ImputsPage;
 //import Pages.LinksPage;
 //import Pages.ListaUsuarioPage;
 //import Pages.MousehoverPage;
@@ -26,7 +29,6 @@ import Pages.ImputsPage;
 //import Pages.ScrollPage;
 //import Pages.TextosPage;
 //import Pages.UploadArquivoPage;
-import Pages.ListaUsuarioPage;
 
 // Instanciando as classes (WebDriver, Home, Cadastro, Lista, Links, etc...)
 public class AutomacaoWeb {
@@ -38,8 +40,8 @@ public class AutomacaoWeb {
 	static LinksPage linksPage;
 	static ImputsPage imputsPage;
 	static BotoesPage botoesPage;
-//	static CheckBoxPage checkBoxPage;
-//	static DropdownPage dropdownPage;
+	static CheckBoxPage checkBoxPage;
+	static DropdownPage dropdownPage;
 //	static TextosPage textosPage;
 //	static MudarFocoPage mudarFocoPage;
 //	static AccordionPage accordionPage;
@@ -65,6 +67,8 @@ public class AutomacaoWeb {
 			linksPage = new LinksPage (driver);
 			imputsPage = new ImputsPage (driver);
 			botoesPage = new BotoesPage (driver);
+			checkBoxPage = new CheckBoxPage (driver);
+			dropdownPage = new DropdownPage (driver);
 			//Sleep sleep = new Sleep (driver);
 		
 	}
@@ -78,6 +82,8 @@ public class AutomacaoWeb {
 			linksPage.Links();
 			imputsPage.Imputs();
 			botoesPage.Botoes();
+			checkBoxPage.CheckBox();
+			dropdownPage.Dropdown();
 		}
 		
 	@AfterClass
