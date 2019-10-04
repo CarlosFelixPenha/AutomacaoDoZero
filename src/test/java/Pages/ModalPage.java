@@ -24,6 +24,14 @@ public class ModalPage {
 		LinkModal.click();
 		Thread.sleep(500);
 		
+		WebElement BotaoAbrir = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[3]/div/a"));
+		BotaoAbrir.click();
+		Thread.sleep(500);
+		
+		WebElement BotaoFechar = driver.findElement (By.xpath("//*[@id=\"modal1\"]/div[2]/a"));
+		BotaoFechar.click();
+		Thread.sleep(500);
+		
 		WebElement BotaoVoltarModal = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[4]/div/a"));
 		BotaoVoltarModal.click();
 		Thread.sleep(2000);
