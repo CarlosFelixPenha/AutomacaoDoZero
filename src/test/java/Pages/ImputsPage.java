@@ -9,37 +9,50 @@ public class ImputsPage {
 	
 	static WebDriver driver;
 	
-	public ImputsPage (WebDriver driver) {
+public ImputsPage (WebDriver driver) {
 		ImputsPage.driver = driver;
-		
+		}
+
+public void HomePage (WebDriver driver) {
+	   HomePage.driver = driver;
 	}
+
 	
-	public void clicarLinkImputsTextField () throws InterruptedException {
+public void clicarBuscaDeElementosImputs () throws InterruptedException {
 		
-		WebElement ElementosImputsTextField = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[2]/a"));
-		ElementosImputsTextField.click();
+		WebElement BuscaDeElementosImputs = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[2]/a"));
+		BuscaDeElementosImputs.click();
 		Thread.sleep(500);
+		}
 		
-		WebElement LinkImputsTextField = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[2]/div/ul/li[2]/a"));
-		LinkImputsTextField.click();
+public void clicarImputsTextField () throws InterruptedException {
+		WebElement ImputsTextField = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[2]/div/ul/li[2]/a"));
+		ImputsTextField.click();
 		Thread.sleep(500);
+		}
 		
+public void clicarCampoFirstName () throws InterruptedException {
 		WebElement CampoFirstName = driver.findElement (By.id("first_name"));
 		CampoFirstName.sendKeys("Jorge");
 		Thread.sleep(300);
+		}
 		
+public void clicarCampoLastName () throws InterruptedException {
 		WebElement CampoLastName = driver.findElement (By.id("last_name"));
 		CampoLastName.sendKeys("Guillen");
 		Thread.sleep(300);
+		}
 		
-		WebElement CampoTextName = driver.findElement (By.id("textarea1"));
-		CampoTextName.sendKeys("GGGGGGGGGGGGGGGGGGGGGGGGGGGAAAAAAAAAAAAAAAAAAAAAAAAAAAALLLLLLLLLLLLLLLLLLLLLOOOOOOOOOOOO");
+public void clicarCampoTextArea () throws InterruptedException {
+		WebElement CampoTextArea = driver.findElement (By.id("textarea1"));
+		CampoTextArea.sendKeys("GGGGGGGGGGGGGGGGGGGGGGGGGGGAAAAAAAAAAAAAAAAAAAAAAAAAAAALLLLLLLLLLLLLLLLLLLLLOOOOOOOOOOOO");
 		Thread.sleep(300);
+		}
 		
-		WebElement BotaoVoltarImputsTextField = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[2]/form/div[6]/div/a"));
-		BotaoVoltarImputsTextField.click();
-		Thread.sleep(2000);
+public void clicarBotaoVoltaImputs () throws InterruptedException {
+		WebElement BotaoVoltarImputs = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[2]/form/div[6]/div/a"));
+		BotaoVoltarImputs.click();
+		Thread.sleep(500);
+		}
 
-		
-}
 }

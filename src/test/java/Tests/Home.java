@@ -21,24 +21,21 @@ public class Home {
 			// Abrindo o Browser
 			driver.get("https://automacaocombatista.herokuapp.com/");
 			driver.manage() .window() .maximize();
-			
+			// Chamando as paginas
 			homePage = new HomePage (driver);
-		
 	}
 
 	@Test
-	public void test() throws InterruptedException {
+	public void testAbrirTelaHome() throws InterruptedException {
 		    // Chamando os steps
 			homePage.clicarBotaoComecarAutomacaoWeb();
-
-		}
+	}
 
 	
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
-//		// Fechando o Browser
-//		   driver.close();
-//		
+        // Fechando o Browser
+		   driver.close();
 	}
 
 }

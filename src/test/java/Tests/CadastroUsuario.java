@@ -33,97 +33,28 @@ public class CadastroUsuario {
 			}
 
 	@Test
-	public void testClicarFormularioCriarUsuarios() throws InterruptedException {
-		    // Chamando o step
+	public void testBuscaFormularioCriarUsuarios() throws InterruptedException {
+		    // Chamando os steps
 			cadastroUsuarioPage.clicarFormularioCriarUsuarios();
-		}
-	
-	@Test
-	public void testClicarLinkCriarUsuarios() throws InterruptedException {
-		    // Chamando o step
 			cadastroUsuarioPage.clicarLinkCriarUsuarios();
-		}
-	
-	@Test
-	public void testEditarCampoNome() throws InterruptedException {
-		    // Chamando o step "Metodo"
 			cadastroUsuarioPage.editarCampoNome();
-		}
-	
-	@Test
-	public void testEditarCampoSobrenome() throws InterruptedException {
-		    // Chamando o step "Metodo"
 			cadastroUsuarioPage.editarCampoSobrenome();
-		}
-	
-	@Test
-	public void testEditarCampoEmail() throws InterruptedException {
-			// Chamando o step "Metodo"
 			cadastroUsuarioPage.editarCampoEmail();
-		}
-	
-	@Test
-	public void testEditarCampoEndereco() throws InterruptedException {
-			// Chamando o step "Metodo"
 			cadastroUsuarioPage.editarCampoEndereco();
-		}
-	
-	@Test
-	public void testEditarCampoUniversidade() throws InterruptedException {
-			// Chamando o step "Metodo"
 			cadastroUsuarioPage.editarCampoUniversidade();
-		}
-	
-	@Test
-	public void testEditarCampoProfissao() throws InterruptedException {
-			// Chamando o step "Metodo"
 			cadastroUsuarioPage.editarCampoProfissao();
-		}
-	
-	@Test
-	public void testEditarCampoGenero() throws InterruptedException {
-			// Chamando o step "Metodo"
 			cadastroUsuarioPage.editarCampoGenero();
-		}
-	
-	@Test
-	public void testEditarCampoIdade() throws InterruptedException {
-			// Chamando o step "Metodo"
 			cadastroUsuarioPage.editarCampoIdade();
-		}
-	
-	@Test
-	public void testClicarBotaoCriar() throws InterruptedException {
-			// Chamando o step "Metodo"
 			cadastroUsuarioPage.clicarBotaoCriar();
-		}
-	
-//	@Test
-//	public void testMensagemSucesso() throws InterruptedException {
-//		// Chamando o step "Metodo"
-////		cadastroUsuarioPage.clicarBotaoCriar();
-//		assertEquals(cadastroUsuarioPage.mensagemSucesso(), "Usuário Criado com sucesso");
-//
-//		}
-//	
-	@Test
-	public void testClicarBotaoVoltarCriarUsuario() throws InterruptedException {
-			// Chamando o step "Metodo"
 			cadastroUsuarioPage.clicarBotaoVoltarCriarUsuario();
-		}
-
-	@Test
-	public void testClicarBotaoVoltarUsuario() throws InterruptedException {
-			// Chamando o step "Metodo"
 			cadastroUsuarioPage.clicarBotaoVoltarUsuario();
 		}
-	
+
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
 			// Fechando o Browser
 		       driver.close();
-		
-	}
+		}
 
 }
 

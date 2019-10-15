@@ -8,24 +8,29 @@ public class ListaUsuarioPage {
 
 	static WebDriver driver;
 	
-	public ListaUsuarioPage (WebDriver driver) {
+public ListaUsuarioPage (WebDriver driver) {
 		ListaUsuarioPage.driver = driver;
-		
-	}
-	
-	public void clicarLinkListaUsuarios () throws InterruptedException {
-		
-		WebElement FormularioListaUsuario = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[1]/a"));
-		FormularioListaUsuario.click();
-		Thread.sleep(500);
-		
-		WebElement LinkListaUsuario = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[1]/div/ul/li[2]/a"));
-		LinkListaUsuario.click();
-		Thread.sleep(500);
-		
-		WebElement BotaoVoltarListaUsuario = driver.findElement (By.xpath("/html/body/div[2]/div[3]/div/a[2]"));
-		BotaoVoltarListaUsuario.click();
-		Thread.sleep(2000);
+		}
 
-}
+public void HomePage (WebDriver driver) {
+		   HomePage.driver = driver;
+		}
+	
+public void clicarFormularioListaDeUsuarios () throws InterruptedException {
+		WebElement FormularioListaDeUsuario = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[1]/a"));
+		FormularioListaDeUsuario.click();
+		Thread.sleep(500);
+		}
+
+public void clicarLinkListaDeUsuarios () throws InterruptedException {	
+		WebElement LinkListaDeUsuario = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[1]/div/ul/li[2]/a"));
+		LinkListaDeUsuario.click();
+		Thread.sleep(500);
+		}
+		
+public void clicarBotaoVoltarListaDeUsuario () throws InterruptedException {
+		WebElement BotaoVoltarListaDeUsuario = driver.findElement (By.xpath("/html/body/div[2]/div[3]/div/a[2]"));
+		BotaoVoltarListaDeUsuario.click();
+		Thread.sleep(2000);
+		}
 }
