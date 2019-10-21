@@ -18,8 +18,8 @@ public void HomePage (WebDriver driver) {
 	}
 
 public void clicarBuscaDeElementosCheckbox () throws InterruptedException {
-		WebElement BuscaDeElementosRadioCheckbox = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[2]/a"));
-		BuscaDeElementosRadioCheckbox.click();
+		WebElement BuscaDeElementosCheckbox = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[2]/a"));
+		BuscaDeElementosCheckbox.click();
 		Thread.sleep(300);
 		}
 		

@@ -13,7 +13,7 @@ public class Home {
 	static WebDriver driver;
 	static HomePage homePage;
 	
-		@BeforeClass
+	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 			// Mostrar onde se encontra o executavél do Chrome
 			System.setProperty("webdriver.chrome.driver", "C:/drivers/chromedriver.exe");
@@ -22,7 +22,7 @@ public class Home {
 			driver.get("https://automacaocombatista.herokuapp.com/");
 			driver.manage() .window() .maximize();
 			// Chamando as paginas
-			homePage = new HomePage (driver);
+			homePage = new HomePage(driver);
 	}
 
 	@Test
@@ -31,7 +31,6 @@ public class Home {
 			homePage.clicarBotaoComecarAutomacaoWeb();
 	}
 
-	
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
         // Fechando o Browser

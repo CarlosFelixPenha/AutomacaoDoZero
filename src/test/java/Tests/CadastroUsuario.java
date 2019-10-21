@@ -17,7 +17,7 @@ public class CadastroUsuario {
 	static CadastroUsuarioPage cadastroUsuarioPage;
 	static HomePage homePage;
 	
-		@BeforeClass
+	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 			// Mostrar onde se encontra o executavél do Chrome
 			System.setProperty("webdriver.chrome.driver", "C:/drivers/chromedriver.exe");
