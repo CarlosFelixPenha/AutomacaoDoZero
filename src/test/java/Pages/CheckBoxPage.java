@@ -32,24 +32,24 @@ public void clicarLinkRadioCheckbox () throws InterruptedException {
 public void clicarRadioBoxBlue () throws InterruptedException {
 		WebElement RadioBoxBlue = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[3]/div[1]/form/p[2]/label"));
 		RadioBoxBlue.click();
-		Thread.sleep(300);
+		Thread.sleep(1000);
 		}
 		
 public void clicarRadioBoxYellow () throws InterruptedException {
 		WebElement RadioBoxYellow = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[3]/div[1]/form/p[3]/label"));
 		RadioBoxYellow.click();
-		Thread.sleep(300);
+		Thread.sleep(1000);
 		}
 		
 public void clicarCheckBoxWhite () throws InterruptedException {
 		WebElement CheckBoxWhite = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[3]/div[2]/p[4]/label"));
 		CheckBoxWhite.click();
-		Thread.sleep(300);
+		Thread.sleep(1000);
 		}
 		
 public void clicarBotaoVoltarCheckBox () throws InterruptedException {
 		WebElement BotaoVoltarRadioCheckbox = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[4]/div/a"));
 		BotaoVoltarRadioCheckbox.click();
-		Thread.sleep(500);
+		Thread.sleep(1000);
 		}
 }

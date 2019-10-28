@@ -1,6 +1,5 @@
 package Pages;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,13 +20,13 @@ public void HomePage (WebDriver driver) {
 public void clicarIteracoesDragAndDrops () throws InterruptedException {
 		WebElement iteracoesDragAndDrops = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[5]/a"));
 		iteracoesDragAndDrops.click();
-		Thread.sleep(300);
+		Thread.sleep(500);
 		}
 		
 public void clicarLinkDragAndDrops () throws InterruptedException {
 		WebElement linkDragAndDrops = driver.findElement (By.xpath("/html/body/div[2]/div[1]/ul/li[5]/div/ul/li[1]/a"));
 		linkDragAndDrops.click();
-		Thread.sleep(300);
+		Thread.sleep(500);
 		}		
 		
 public void arrastarImagemDragAndDrops () throws InterruptedException {
@@ -35,13 +34,13 @@ public void arrastarImagemDragAndDrops () throws InterruptedException {
 		WebElement target = driver.findElement(By.id("dropzone"));
 		Actions arrastar = new Actions(driver);
 		arrastar.dragAndDrop(source, target).perform();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		}
 
 public void clicarBotaoVoltarDrag () throws InterruptedException {
 	WebElement botaoVoltarDrag = driver.findElement (By.xpath("/html/body/div[2]/div[2]/div[5]/div/div/a"));
 	botaoVoltarDrag.click();
-	Thread.sleep(500);
+	Thread.sleep(1000);
     }
 
 }
